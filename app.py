@@ -2,10 +2,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from pathlib import Path
-from modules.data_processing import validate_dataset, summarize_quality, prepare_analysis_data
-from modules.exploratory_analysis import render_eda
-from modules.prediction import load_model, predict_rows, feature_form
-from modules.dashboard import render_dashboard
+from data_processing import validate_dataset, summarize_quality, prepare_analysis_data
+from exploratory_analysis import render_eda
+from prediction import load_model, predict_rows, feature_form
+from dashboard import render_dashboard
 
 st.set_page_config(page_title="Student Service Request Monitoring", page_icon="🎓", layout="wide")
 st.title("Student Service Request Monitoring System")
